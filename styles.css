@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3A3339;
+}
+
+header {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #ffffff;
+    margin-top: 20px; /* Устанавливаем отступ сверху */
+    margin-bottom: 20px; /* Устанавливаем отступ снизу */
+    margin-left: 10px; /* Устанавливаем отступ слева */
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-container {
+    text-align: center;
+    padding-top: 10px; /* Устанавливаем отступ сверху внутри image-container */
+    padding-bottom: 40px; /* Устанавливаем отступ снизу внутри image-container */
+    padding-left: 5px; /* Устанавливаем отступ слева внутри image-container */
+    padding-right: 5px; /* Устанавливаем отступ справа внутри image-container */
+}
+
+    .image-container img {
+        border-radius: 20px;
+        max-width: 350px;
+        max-height: 250px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+
+.content {
+    align-self: flex-start;
+    text-align: left; /* Изменено: выравниваем текст слева */
+}
+
+/* Стили для заголовков h2 внутри секции */
+section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Стили для параграфов p внутри секции */
+section p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Добавляем стили для кнопки */
+section button {
+    background-color: #56335A; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 10px 20px; /* Внутренний отступ кнопки */
+    font-size: 16px; /* Размер шрифта кнопки */
+    border: none; /* Убираем границу кнопки */
+    border-radius: 5px; /* Скругляем углы кнопки */
+    cursor: pointer; /* Устанавливаем стиль указателя при наведении */
+}
+
+    /* Добавляем стили для кнопки при наведении */
+    section button:hover {
+        background-color: #45a049;
+    }
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+body {
+    background-image: url("photo1708970377.jpeg"); /* Замените "путь_к_изображению.jpg" на путь к вашему изображению */
+    background-size: cover; /* Растягиваем изображение на всю область экрана */
+    background-position: center; /* Центрируем изображение */
+    background-attachment: fixed; /* Устанавливаем фон как фиксированный */
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    section {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .image-container {
+        padding: 10px;
+    }
+
+    header, footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    /* Reduce button and image sizes for mobile */
+    button, img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
